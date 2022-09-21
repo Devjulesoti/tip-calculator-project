@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&family=Roboto:ital,wght@0,300;0,500;1,400;1,500&family=Satisfy&family=Space+Mono:wght@700&family=Yantramanav&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/index.js"></script>
+</head>
+<body>
+    
+    <main class="overall">
+        <img src="/images/logo.svg" alt="logo-image">
+        <main class="main-page">
+            <section class="calc-content">
+                <label for="bill">Bill</label> <br>
+                <input type="text"  >
+                    <p>Select Tip % </p>
+                    <div class="buttons">
+                        <button>5%</button> 
+                        <button>10%</button>
+                        <button id="btn-percent">15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <button id="custom-btn">Custom</button>
+                    </div>
+                    <label for="no-of-people" class="number">Number of People</label> <br>
+                    <input type="text" placeholder="0">
+    
+            </section>
+            <section class="result-content">
+               
+                        <div class="total">
+                            <p>Tip Amount <br><span class="person">/ person</span></br></p>
+                        <p class="price">$4.27</p>
+                        </div>
+                        
+    
+                        <div>
+                            <div class="total"><p class="first-text">Total <br><span class="person">/ person</span></p>
+                                <p class="price">$32.79</p></div>
+                        </div>
+
+                      
+                   
+    
+                
+
+                <button class="reset-btn">RESET</button>
+            </section>
+        </main>
+        
+    </main>
+</body>
+</html>
