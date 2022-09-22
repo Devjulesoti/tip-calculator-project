@@ -1,12 +1,12 @@
 body{
     background-color: hsl(185, 41%, 84%);
-    max-width: 375px;
+    /* width: 375px; */
     font-family: 'Space Mono', monospace;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .overall-container{
     display: flex;
@@ -176,3 +176,42 @@ color: hsl(183, 100%, 15%);
     padding-right: 15px;
     margin-top: 0px;
 }
+
+@media only screen and (max-width: 375px){
+    body{
+        width: 100%;
+    }
+    .main-page{
+        width: 100%;
+}
+    .buttons{
+        width: 100%;
+    }
+    .input-container{
+        width: 100%;
+    }
+    .input-container input{
+        width: 100%;
+    }
+    .result-content{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 378px){
+        .main-page{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 20px;
+    }
+    .calc-content{
+        margin-right: 15px;
+    }
+    .reset-btn{
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+}
+
