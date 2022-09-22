@@ -49,7 +49,30 @@ label{
 #tip-par{
     margin-left: 5px;
 }
-input{
+
+/* .input-container{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(230, 235, 235);
+    } */
+
+    .input-container input{
+        width: 250px;
+        background-image: url(/images/icon-dollar.svg);
+        background-repeat: no-repeat;
+        position: left;
+        background-size: 10px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+    }
+
+    .input-container img{
+        
+    }
+
+.input-number{
     background-color:  rgb(230, 235, 235);
     border:none;
     width: 300px;
@@ -59,8 +82,6 @@ input{
     font-weight: bold;
     color: black;
     border-radius: 5px;
-    /*margin-left: 10px;
-    */:;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -94,18 +115,22 @@ input{
     margin-bottom: 5px;
     /* border: 2px solid black; */
 }
+
 .buttons button:hover{
 background-color:  rgb(82, 197, 197);
 cursor: pointer;
 }
+
 #custom-btn{
     color: hsl(183, 100%, 15%);
     background-color: rgb(230, 235, 235);
 }
+
 #btn-percent{
     color: black;
     background-color: rgb(82, 197, 197);
 }
+
 .result-content{
     background-color: rgb(14, 94, 94);
     border-radius: 8px;
