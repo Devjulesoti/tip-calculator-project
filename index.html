@@ -15,44 +15,43 @@
     
     <main class="overall-container">
             <img src="/images/logo.svg" alt="logo-image">
-            <main class="main-page">
-                        <section class="calc-content">
-                            <label for="bill">Bill</label> <br>
-                                <div class="input-container">
-                                    <img src="/images/icon-dollar.svg" alt="">
-                                    <input type="text" placeholder="0">
-                                </div>
-                            <p id="tip-par">Select Tip % </p>
-                                <div class="buttons">
-                                    <button>5%</button> 
-                                    <button>10%</button>
-                                    <button>15%</button>
-                                    <button>25%</button>
-                                    <button>50%</button>
-                                    <button id="custom-btn">Custom</button>
-                                </div>
+            <section class="main-page">
+                    <section class="calc-content">
+                        <label for="bill">Bill</label> <br>
+                        <div class="input-container">
+                            <img src="/images/icon-dollar.svg" alt="">
+                            <input type="text" placeholder="0" id="bill">
+                        </div>
+                        <p id="tip-par">Select Tip % </p>
+                        <div class="buttons">
+                             <button class="percent" onclick="calculate()">5%</button> 
+                             <button onclick="calculate()">10%</button>
+                             <button onclick="calculate()">15%</button>
+                             <button onclick="calculate()">25%</button>
+                             <button onclick="calculate()">50%</button>
+                             <button onclick="calculate()" id="custom-btn">Custom</button>
+                        </div>
                             <label for="no-of-people" class="number">Number of People</label> <br>
-                                <div class="input-container">
-                                    <img src="/images/icon-person.svg" alt="">
-                                    <input type="text" placeholder="0">
-                                 </div>
-                        </section>
+                            <div class="input-container">
+                                <img src="/images/icon-person.svg" alt="">
+                                <input type="text" placeholder="0">
+                            </div>
+                    </section>
 
-                        <section class="result-content">
-                                    <div class="total">
-                                        <p>Tip Amount <br><span class="person">/ person</span></br></p>
-                                        <p class="price">$4.27</p>
-                                    </div>
-                                    <div class="total">
-                                        <p class="first-text">Total <br><span class="person">/ person</span></p>
-                                        <p class="price">$32.79</p>
-                                    </div>
-                                    
-
-                            <button class="reset-btn">RESET</button>
-                        </section>
-            </main>
+                     <section class="result-content">
+                                <div class="total">
+                                    <p>Tip Amount <br><span class="person">/ person</span></br></p>
+                                    <p id="tip-amount" class="price">$0.00</p>
+                                </div>
+                                <div class="total">
+                                    <p class="first-text">Total <br><span class="person">/ person</span></p>
+                                    <p id="total-price" class="price">$0.00</p>
+                                </div>
+                                <button class="reset-btn">RESET</button>
+                    </section>
+            </section>
         
     </main>
+
 </body>
 </html>

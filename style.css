@@ -211,6 +211,7 @@ color: hsl(183, 100%, 15%);
     }
     .calc-content{
         margin-right: 15px;
+        margin-top: 0px;
     }
     .reset-btn{
         margin-top: 70px;
@@ -219,6 +220,12 @@ color: hsl(183, 100%, 15%);
     .buttons button{
         width: 30%;
     }
-    
+    .result-content{
+        margin-top: 0px;
+    }
+    #custom-btn{
+         text-align: center;
+         padding: 10px 0 10px 0;
+    }
 }
 
