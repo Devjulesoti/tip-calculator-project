@@ -6,7 +6,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
-    /* justify-content: center; */
 }
 .overall-container{
     display: flex;
@@ -108,7 +107,16 @@ label{
     font-weight: bold;
     padding: 10px 30px 10px 30px;
     margin-bottom: 5px;
-    }
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 
 .buttons button:hover{
 background-color:  rgb(18, 177, 150);
@@ -120,7 +128,10 @@ color: hsl(183, 100%, 15%);
     color: hsl(183, 100%, 15%);
     background-color: rgb(230, 235, 235);
 }
-
+#custom-btn:hover{
+    color: hsl(183, 100%, 15%);
+    background-color: rgb(18, 177, 150);
+}
 .result-content{
     background-color: hsl(183, 100%, 15%);
     border-radius: 8px;
@@ -128,7 +139,10 @@ color: hsl(183, 100%, 15%);
     margin-top: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
-
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .person{
@@ -159,6 +173,16 @@ color: hsl(183, 100%, 15%);
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     color: hsl(183, 100%, 15%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.reset-btn:hover{
+    background-color: white;
+    color: hsl(183, 100%, 15%);
+    
 }
 
 .result-content .price{
@@ -175,6 +199,7 @@ color: hsl(183, 100%, 15%);
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 0px;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px){
@@ -215,7 +240,6 @@ color: hsl(183, 100%, 15%);
     }
     .reset-btn{
         margin-top: 70px;
-        
     }
     .buttons button{
         width: 30%;

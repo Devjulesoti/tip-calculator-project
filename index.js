@@ -4,6 +4,7 @@
     let People = document.querySelector('.number');
     let tipAmount = document.getElementById('tip-amount');
     let totalPrice = document.getElementById('total-price');
+    let resetButton = document.getElementsByClassName('.reset-btn');
     
 
     function calculate(){
@@ -54,19 +55,30 @@
         totalPrice.textContent = `$${totalAmount}`;
 
        }
-
-       else if (button[6].textContent === 'Custom') {
-        let percentage = prompt('Enter percentage');
-        result = Number(((percentage.value/100)*bill.value)* 1);
-        tipAmount.textContent = `$${result}`;
-        totalAmount = (result * People.value);
-        totalPrice.textContent = `$${totalAmount}`;
-       }
-
        else{
         tipAmount.textContent = " ";
        }
 
+    }
+
+    function resetCalc() {
+        bill.value = '';
+        bill.focus();
+        People.value = '';
+        tipAmount.textContent = '$0.00';
+        totalPrice.textContent = '$0.00';
+
+    }
+
+    function custom() {
+        let percentage;
+        let customResult;
+        let totalAmount;
+        customResult = prompt('Enter your desired percentage');
+        percentage = (Number(customResult.value)/100)*bill.value;
+        tipAmount.textContent = `$${percentage}`;
+        totalAmount = (percentage * People.value);
+        totalPrice.textContent = `$${totalAmount}`;
     }
     
 
