@@ -46,10 +46,13 @@
         }
 
         else{
-        custom.value = ''
-        custom.placeholder = 'Custom'
+         alert('Enter number of people')   
         }
-        
-
-        
     }
+    function whenClicked() {
+        custom.value = ""
+        custom.placeholder = "%"
+    }
+    
+    custom.value = "Custom";
+        custom.placeholder = "Custom";
