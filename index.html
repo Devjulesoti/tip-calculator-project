@@ -24,17 +24,20 @@
                         </div>
                         <p id="tip-par">Select Tip % </p>
                         <div class="buttons">
-                             <button onclick="calculate()">5%</button> 
-                             <button onclick="calculate()">10%</button>
-                             <button onclick="calculate()">15%</button>
-                             <button onclick="calculate()">25%</button>
-                             <button onclick="calculate()">50%</button>
-                             <button onclick="custom()" id="custom-btn">Custom</button>
+                            <button class="percent-btn" data-percent="5">5%</button> 
+                            <button class="percent-btn" data-percent="10">10%</button>
+                            <button class="percent-btn" data-percent="15">15%</button>
+                            <button class="percent-btn" data-percent="25">25%</button>
+                            <button class="percent-btn" data-percent="50">50%</button>
+                            <input oninput = "customCalc()" type="text" placeholder="Custom" id="custom-btn" data-custom >
+                            
+                            <!-- <button onclick="custom()" class="customized" id="custom-btn">Custom</button> -->
                         </div>
+                        <!-- <div class="custom-btn"></div> -->
                             <label for="no-of-people">Number of People</label> <br>
                             <div class="input-container">
                                 <img src="/images/icon-person.svg" alt="">
-                                <input class="number" type="text" placeholder="0">
+                                <input class="number" type="text" placeholder="0" id="people">
                             </div>
                     </section>
 
